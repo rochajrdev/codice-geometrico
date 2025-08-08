@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoluções - Códice Geométrico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        .resolution {
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .resolution h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .formula {
+            background: #e8f4f8;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px auto;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Resoluções Detalhadas</h1>
+
+        <div class="resolution">
+            <h2>🏛️ Sala 1: O Retângulo Sagrado</h2>
+            <div class="step">
+                <h3>Problema:</h3>
+                <p>Calcular a área de um retângulo com base = 12m e altura = 7m</p>
+            </div>
+            <div class="step">
+                <h3>Fórmula:</h3>
+                <div class="formula">
+                    Área do retângulo = base × altura
+                </div>
+            </div>
+            <div class="step">
+                <h3>Resolução:</h3>
+                <p>Área = 12m × 7m = 84m²</p>
+            </div>
+        </div>
+
+        <div class="resolution">
+            <h2>🔺 Sala 2: O Labirinto dos Triângulos</h2>
+            <div class="step">
+                <h3>Problema:</h3>
+                <p>Encontrar o triângulo com menor perímetro e, em caso de empate, o de menor área.</p>
+                <ul>
+                    <li>Triângulo 1: lados 3, 4, 5</li>
+                    <li>Triângulo 2: lados 6, 6, 6</li>
+                    <li>Triângulo 3: lados 2, 5, 5</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Resolução:</h3>
+                <p>1. Calcular perímetros:</p>
+                <ul>
+                    <li>T1: 3 + 4 + 5 = 12</li>
+                    <li>T2: 6 + 6 + 6 = 18</li>
+                    <li>T3: 2 + 5 + 5 = 12</li>
+                </ul>
+                <p>2. Como T1 e T3 têm o mesmo perímetro, calcular suas áreas usando a fórmula de Herão:</p>
+                <div class="formula">
+                    p = (a + b + c)/2 (semiperímetro)<br>
+                    Área = √(p(p-a)(p-b)(p-c))
+                </div>
+                <p>3. Áreas:</p>
+                <ul>
+                    <li>T1: A = √(6(6-3)(6-4)(6-5)) = 6 m²</li>
+                    <li>T3: A = √(6(6-2)(6-5)(6-5)) = 4.99 m²</li>
+                </ul>
+                <p>Resposta: Triângulo 1, pois tem o mesmo perímetro que T3 mas maior área que T2.</p>
+            </div>
+        </div>
+
+        <div class="resolution">
+            <h2>⭕ Sala 3: O Círculo de Pedra</h2>
+            <div class="step">
+                <h3>Problema:</h3>
+                <p>Calcular a área de um círculo com raio = 7m</p>
+            </div>
+            <div class="step">
+                <h3>Fórmula:</h3>
+                <div class="formula">
+                    Área do círculo = π × r²<br>
+                    π ≈ 3,14
+                </div>
+            </div>
+            <div class="step">
+                <h3>Resolução:</h3>
+                <p>Área = 3,14 × 7² = 3,14 × 49 = 153,86m²</p>
+            </div>
+        </div>
+
+        <div class="resolution">
+            <h2>🌟 Sala 4: O Desafio Mestre</h2>
+            <div class="step">
+                <h3>Problema:</h3>
+                <p>Calcular área e perímetro de uma figura composta por:</p>
+                <ul>
+                    <li>Retângulo central: 10m × 8m</li>
+                    <li>Dois semicírculos nas laterais com raio = 4m</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Resolução da Área:</h3>
+                <p>1. Área do retângulo = 10m × 8m = 80m²</p>
+                <p>2. Área dos semicírculos = 2 × (πr²/2)</p>
+                <p>   = 2 × (3,14 × 16/2)</p>
+                <p>   = 2 × 25,12</p>
+                <p>   = 50,24m²</p>
+                <p>3. Área total = 80 + 50,24 = 130,24m²</p>
+            </div>
+            <div class="step">
+                <h3>Resolução do Perímetro:</h3>
+                <p>1. Lados retos = 2 × 8m = 16m</p>
+                <p>2. Arcos dos semicírculos = 2 × (πr)</p>
+                <p>   = 2 × (3,14 × 4)</p>
+                <p>   = 2 × 12,56</p>
+                <p>   = 25,12m</p>
+                <p>3. Perímetro total = 16 + 25,12 = 51,12m</p>
+            </div>
+        </div>
+
+        <div class="resolution">
+            <h2>🌺 Sala 5: O Jardim Secreto</h2>
+            <div class="step">
+                <h3>Problema:</h3>
+                <p>Calcular área total de uma figura composta por:</p>
+                <ul>
+                    <li>Retângulo: 8m × 4m</li>
+                    <li>Semicírculo com raio = 4m</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Resolução:</h3>
+                <p>1. Área do retângulo = 8m × 4m = 32m²</p>
+                <p>2. Área do semicírculo = (πr²)/2</p>
+                <p>   = (3,14 × 16)/2</p>
+                <p>   = 50,24/2</p>
+                <p>   = 12,56m²</p>
+                <p>3. Área total = 32 + 12,56 = 44,56m²</p>
+            </div>
+        </div>
+
+        <div class="resolution">
+            <h2>🏛️ Sala 6: A Planta da Casa Antiga</h2>
+            <div class="step">
+                <h3>Problema:</h3>
+                <p>Calcular o perímetro real de um quarto quadrado que na planta mede 3cm de lado, com escala 1:50</p>
+            </div>
+            <div class="step">
+                <h3>Resolução:</h3>
+                <p>1. Converter medida da planta para realidade:</p>
+                <p>   3cm × 50 = 150cm = 1,5m (cada lado)</p>
+                <p>2. Calcular perímetro real:</p>
+                <p>   1,5m × 4 lados = 6m</p>
+            </div>
+        </div>
+
+        <div class="resolution">
+            <h2>💧 Sala 7: O Lago Misterioso</h2>
+            <div class="step">
+                <h3>Problema:</h3>
+                <p>Calcular área total de:</p>
+                <ul>
+                    <li>Retângulo central: 10m × 6m</li>
+                    <li>Dois semicírculos nas extremidades com raio = 3m</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Resolução:</h3>
+                <p>1. Área do retângulo = 10m × 6m = 60m²</p>
+                <p>2. Área dos semicírculos = 2 × (πr²/2)</p>
+                <p>   = 2 × (3,14 × 9/2)</p>
+                <p>   = 2 × 14,13</p>
+                <p>   = 28,26m²</p>
+                <p>3. Área total = 60 + 28,26 = 88,26m²</p>
+            </div>
+        </div>
+
+        <div class="resolution">
+            <h2>🏆 Sala 8: O Desafio Final do Inventor</h2>
+            <div class="step">
+                <h3>Problema:</h3>
+                <p>Calcular área total de uma figura composta por:</p>
+                <ul>
+                    <li>Quadrado na base com lado = 12m</li>
+                    <li>Triângulo isósceles no topo com base = 12m e altura = 5m</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Resolução:</h3>
+                <p>1. Área do quadrado = lado²</p>
+                <p>   = 12m × 12m = 144m²</p>
+                <p>2. Área do triângulo = (base × altura)/2</p>
+                <p>   = (12m × 5m)/2</p>
+                <p>   = 60/2 = 30m²</p>
+                <p>3. Área total = 144m² + 30m² = 144m²</p>
+                <p><strong>Observação:</strong> A área total é 144m² porque o triângulo forma o telhado e não adiciona área à base quadrada.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn">🔄 Voltar ao Jogo</a>
+    </div>
+</body>
+</html>

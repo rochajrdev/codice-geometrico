@@ -399,7 +399,7 @@
                 <div class="intro-description">
                     <p>Bem-vindo, jovem explorador! 🎯</p>
                     <p>O antigo Códice Geométrico foi perdido em um templo misterioso.</p>
-                    <p>Para recuperá-lo, você deve resolver <strong>4 desafios matemáticos</strong> envolvendo <strong>área e perímetro</strong> de figuras planas.</p>
+                    <p>Para recuperá-lo, você deve resolver <strong>8 desafios matemáticos</strong> envolvendo <strong>área e perímetro</strong> de figuras planas.</p>
                     <p>Cada sala contém um enigma que teste seus conhecimentos. Só os mais espertos conseguirão chegar ao final!</p>
                     <p>🧮 <strong>Dica:</strong> Use suas habilidades em geometria para abrir as portas secretas.</p>
                 </div>
@@ -603,7 +603,198 @@
             </div>
         </div>
 
-        <!-- Tela de Parabéns -->
+        <!-- Sala 5: O Jardim Secreto -->
+        <div class="room" id="room5">
+            <h1>🏛️ Missão: Recuperar o Códice Geométrico</h1>
+            <div class="room-title">🔐 Sala 5: O Jardim Secreto</div>
+            
+            <div class="figure-container">
+                <p>Um belo jardim secreto se revela à sua frente, mas o portão está trancado com um código numérico. Para abri-lo, calcule a área total do canteiro central sabendo que o tem Jardim com retângulo de 8m x 4m e semicírculo com raio de 4m:</p>
+                
+                <div class="svg-container">
+                    <img src="missaocinco.png" alt="Jardim com retângulo de 8m x 4m e semicírculo com raio de 4m" style="max-width: 100%; height: auto; border: 2px solid #3498db; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                </div>
+                
+                <div class="question">
+                    🤔 Qual é a área total do canteiro? (Use π ≈ 3,14 e expresse em m²)
+                </div>
+                
+                <div class="input-group">
+                    <input type="number" id="answer5" placeholder="Digite a área total" step="0.01">
+                    <br><br>
+                    <button class="btn" onclick="checkAnswer(5)">🔓 Abrir Portão</button>
+                </div>
+                
+                <div id="feedback5" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- Sala 6: A Planta da Casa Antiga -->
+        <div class="room" id="room6">
+            <h1>🏛️ Missão: Recuperar o Códice Geométrico</h1>
+            <div class="room-title">🔐 Sala 6: A Planta da Casa Antiga</div>
+            
+            <div class="figure-container">
+                <p>Na casa abandonada, você encontra uma antiga planta arquitetônica com escala 1:50. Em uma gaveta trancada, há uma inscrição: "O perímetro real do quarto revela a chave".</p>
+                
+                <div class="svg-container">
+                    <svg width="400" height="300" viewBox="0 0 400 300">
+                        <!-- Fundo da planta -->
+                        <rect x="50" y="50" width="300" height="200" 
+                              fill="#f5f5dc" stroke="#8b4513" stroke-width="2"/>
+                        
+                        <!-- Quarto quadrado -->
+                        <rect x="150" y="100" width="60" height="60" 
+                              fill="none" stroke="#8b4513" stroke-width="3"/>
+                        
+                        <!-- Medida na planta -->
+                        <text x="180" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">3 cm</text>
+                        
+                        <!-- Escala -->
+                        <text x="60" y="270" font-size="14" font-weight="bold" fill="#2c3e50">Escala 1:50</text>
+                        <text x="60" y="290" font-size="12" fill="#2c3e50">(cada 1 cm na planta = 50 cm na realidade)</text>
+                    </svg>
+                </div>
+                
+                <div class="question">
+                    🤔 Qual é o perímetro real do quarto? (em metros)
+                </div>
+                
+                <div class="input-group">
+                    <input type="number" id="answer6" placeholder="Digite o perímetro real" step="0.01">
+                    <br><br>
+                    <button class="btn" onclick="checkAnswer(6)">🔓 Abrir Gaveta</button>
+                </div>
+                
+                <div id="feedback6" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- Sala 7: O Lago Misterioso -->
+        <div class="room" id="room7">
+            <h1>🏛️ Missão: Recuperar o Códice Geométrico</h1>
+            <div class="room-title">🔐 Sala 7: O Lago Misterioso</div>
+            
+            <div class="figure-container">
+                <p>No quintal, você encontra um lago com formato peculiar: um retângulo central com dois semicírculos nas extremidades. A combinação do cofre é a área total do lago em metros quadrados.</p>
+                
+                <div class="svg-container">
+                    <svg width="500" height="300" viewBox="0 0 500 300">
+                        <!-- Retângulo central -->
+                        <rect x="150" y="100" width="200" height="100" 
+                              fill="#87CEEB" stroke="#4682B4" stroke-width="2" opacity="0.8"/>
+                        
+                        <!-- Semicírculo esquerdo -->
+                        <path d="M 150 150 A 50 50 0 0 1 150 200 A 50 50 0 0 1 150 100 Z" 
+                              fill="#87CEEB" stroke="#4682B4" stroke-width="2" opacity="0.8"/>
+                        
+                        <!-- Semicírculo direito -->
+                        <path d="M 350 100 A 50 50 0 0 1 350 200 Z" 
+                              fill="#87CEEB" stroke="#4682B4" stroke-width="2" opacity="0.8"/>
+                        
+                        <!-- Medidas -->
+                        <text x="250" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">10m</text>
+                        <text x="135" y="155" text-anchor="end" font-size="14" font-weight="bold" fill="#2c3e50">6m</text>
+                        <text x="250" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Raio = 3m</text>
+                        
+                        <!-- Elementos decorativos -->
+                        <circle cx="200" cy="150" r="3" fill="#FFFF00"/> <!-- Pato -->
+                        <circle cx="300" cy="130" r="3" fill="#FFFF00"/> <!-- Outro pato -->
+                        <path d="M 180 90 Q 185 85 190 90" stroke="#90EE90" fill="none"/> <!-- Planta -->
+                        <path d="M 320 90 Q 325 85 330 90" stroke="#90EE90" fill="none"/> <!-- Outra planta -->
+                    </svg>
+                </div>
+                
+                <div class="question">
+                    🤔 Qual é a área total do lago? (Use π ≈ 3,14 e expresse em m²)
+                </div>
+                
+                <div class="input-group">
+                    <input type="number" id="answer7" placeholder="Digite a área total" step="0.01">
+                    <br><br>
+                    <button class="btn" onclick="checkAnswer(7)">🔓 Abrir Cofre</button>
+                </div>
+                
+                <div id="feedback7" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- Sala 8: O Desafio Final do Inventor -->
+        <div class="room" id="room8">
+            <h1>🏛️ Missão: Recuperar o Códice Geométrico</h1>
+            <div class="room-title">🔐 Sala 8: O Desafio Final do Inventor</div>
+            
+            <div class="figure-container">
+                <p>Na última sala, você encontra o projeto final do inventor: uma estrutura peculiar composta por um quadrado com um triângulo isósceles em cima. Em uma anotação, lê-se: "Para construir o piso, calcule a área total."</p>
+                
+                <div class="svg-container">
+                    <svg width="500" height="400" viewBox="0 0 500 400">
+                        <!-- Quadrado -->
+                        <rect x="150" y="150" width="200" height="200" 
+                              fill="#3498db" stroke="#2980b9" stroke-width="2" opacity="0.8"/>
+                        
+                        <!-- Triângulo isósceles -->
+                        <path d="M 150 150 L 350 150 L 250 70 Z" 
+                              fill="#e74c3c" stroke="#c0392b" stroke-width="2" opacity="0.8"/>
+                        
+                        <!-- Medidas -->
+                        <text x="250" y="260" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">12 m</text>
+                        <text x="130" y="250" text-anchor="end" font-size="14" font-weight="bold" fill="#2c3e50">12 m</text>
+                        <text x="250" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">5 m</text>
+                        <text x="300" y="140" text-anchor="start" font-size="14" font-weight="bold" fill="#2c3e50">12 m</text>
+                        
+                        <!-- Linhas de medida -->
+                        <line x1="250" y1="150" x2="250" y2="70" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5"/>
+                    </svg>
+                </div>
+                
+                <div class="question">
+                    🤔 Sabendo que:
+                    <ul>
+                        <li>O quadrado tem lado = 12 metros</li>
+                        <li>O triângulo isósceles tem base = 12 metros (igual ao lado do quadrado)</li>
+                        <li>A altura do triângulo é 5 metros</li>
+                    </ul>
+                    Qual é a área total necessária para o piso? (em m²)
+                </div>
+                
+                <div class="input-group">
+                    <input type="number" id="answer8" placeholder="Digite a área total" step="0.1">
+                    <br><br>
+                    <button class="btn" onclick="checkAnswer(8)">🔓 Revelar o Códice</button>
+                </div>
+                
+                <div id="feedback8" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- Tela de Desfecho -->
+        <div class="room" id="ending">
+            <div class="celebration">
+                <h1>📜 Desfecho da História</h1>
+                
+                <div class="ending-text">
+                    <p>Após superar todos os desafios e desvendar cada mistério escondido nas salas, você finalmente chega ao coração do enigma: um cofre antigo, selado por séculos, aguardando o verdadeiro guardião do conhecimento para ser aberto.</p>
+                    
+                    <p>Ao inserir o último código — fruto de sua lógica, raciocínio e determinação — o cofre se abre com um suave clique. Dentro dele, um pergaminho dourado brilha, revelando a seguinte mensagem:</p>
+                    
+                    <div class="scroll-message">
+                        "O saber é a chave que abre todas as portas. Hoje, você provou que é capaz de unir matemática, estratégia e criatividade para vencer qualquer desafio. Continue explorando, aprendendo e resolvendo, pois o verdadeiro tesouro é o conhecimento que você conquistou."
+                    </div>
+                    
+                    <div class="ending-image">
+                        <img src="fim.png" alt="Imagem do final da jornada" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    </div>
+                    
+                    <h2>🌟 Parabéns, Guardião das Áreas e Perímetros! 🌟</h2>
+                    <p>Você completou todas as missões, venceu cada obstáculo e mostrou que o raciocínio lógico é sua maior arma. O mundo agora conhece seu nome como o mestre que solucionou o Enigma das Oito Salas.</p>
+                    
+                    <button class="btn" onclick="showRoom('victory')">📊 Ver Pontuação Final</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tela de Pontuação Final -->
         <div class="room" id="victory">
             <div class="celebration">
                 <h1>🎉 PARABÉNS! 🎉</h1>
@@ -614,30 +805,33 @@
                 <div class="score-breakdown" id="scoreBreakdown">
                     <h3>📊 Sua Pontuação Final</h3>
                     <div class="score-item">
-                        <span>🏛️ Sala 1 - Retângulo:</span>
+                        <span>🏛️ Sala 1 - O Retângulo Sagrado:</span>
                         <span id="score1">0 pts</span>
                     </div>
                     <div class="score-item">
-                        <span>🔺 Sala 2 - Triângulos:</span>
+                        <span>🔺 Sala 2 - O Labirinto dos Triângulos:</span>
                         <span id="score2">0 pts</span>
                     </div>
                     <div class="score-item">
-                        <span>🌀 Sala 3 - Círculo:</span>
+                        <span>⭕ Sala 3 - O Círculo de Pedra:</span>
                         <span id="score3">0 pts</span>
                     </div>
                     <div class="score-item">
-                        <span>🏆 Sala 4 - Desafio Mestre:</span>
+                        <span>� Sala 4 - O Desafio Mestre:</span>
                         <span id="score4">0 pts</span>
                     </div>
                     <div class="score-item" style="border-left-color: #f39c12; font-weight: bold; background: #fff9e6;">
-                        <span>🎯 TOTAL:</span>
-                        <span id="totalScoreFinal">0/12 pts</span>
+                        <span>🎯 PONTUAÇÃO TOTAL:</span>
+                        <span id="totalScoreFinal">0 de 12 pontos</span>
                     </div>
                 </div>
                 
                 <p id="finalTime">⏰ Tempo total: <span id="totalTime">00:00</span></p>
                 <br>
-                <button class="btn" onclick="restartGame()">🔄 Jogar Novamente</button>
+                <div class="button-group">
+                    <button class="btn" onclick="window.location.href='resolucoes.html'">📝 Conferir Resoluções</button>
+                    <button class="btn" onclick="restartGame()">🔄 Jogar Novamente</button>
+                </div>
             </div>
         </div>
     </div>
@@ -651,18 +845,22 @@
 
         // Sistema de pontuação
         let totalScore = 0;
-        let roomAttempts = { 1: 0, 2: 0, 3: 0, 4: 0 };
-        let roomScores = { 1: 0, 2: 0, 3: 0, 4: 0 };
+        let roomAttempts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
+        let roomScores = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
 
         // Respostas corretas
         const answers = {
-            1: 84,           // Área do retângulo: 12 × 7 = 84
+            1: { min: 83.5, max: 84.5 },           // Área do retângulo: 12 × 7 = 84
             2: 1,            // Triângulo 1 tem menor perímetro e menor área
-            3: { min: 153.8, max: 154 },  // Área do círculo: π × 7² ≈ 153.86
+            3: { min: 153, max: 155 },  // Área do círculo: π × 7² ≈ 153.86
             4: {
-                area: { min: 130.2, max: 130.3 },    // Área total ≈ 130.24
-                perimeter: { min: 51.1, max: 51.2 }  // Perímetro ≈ 51.12
-            }
+                area: { min: 129, max: 131 },    // Área total ≈ 130.24
+                perimeter: { min: 50, max: 52 }  // Perímetro ≈ 51.12
+            },
+            5: { min: 44, max: 45 },  // Área total: retângulo (32) + semicírculo (π × 4² ÷ 2 ≈ 12.56) = 44.56
+            6: { min: 5.8, max: 6.2 },    // Perímetro real: 3cm × 4 lados × 50 (escala) = 600cm = 6m
+            7: { min: 88, max: 89 },  // Área total: retângulo (60) + dois semicírculos (28.26) ≈ 88.26
+            8: { min: 143, max: 145 }  // Área total: quadrado (144)
         };
 
         // Calcular pontuação baseada no número de tentativas
@@ -680,8 +878,8 @@
             currentRoom = 1;
             startTime = Date.now();
             totalScore = 0;
-            roomAttempts = { 1: 0, 2: 0, 3: 0, 4: 0 };
-            roomScores = { 1: 0, 2: 0, 3: 0, 4: 0 };
+            roomAttempts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
+            roomScores = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
             updateProgressBar();
             showRoom('room1');
             startTimer();
@@ -703,14 +901,14 @@
 
         // Atualizar barra de progresso
         function updateProgressBar() {
-            const progress = (currentRoom / 4) * 100;
+            const progress = (currentRoom / 8) * 100;
             document.getElementById('progressFill').style.width = progress + '%';
             
             // Atualizar indicador de sala
             const indicator = document.getElementById('roomIndicator');
-            if (currentRoom > 0 && currentRoom <= 4) {
+            if (currentRoom > 0 && currentRoom <= 8) {
                 indicator.style.display = 'block';
-                indicator.textContent = `📍 Sala ${currentRoom}/4`;
+                indicator.textContent = `📍 Sala ${currentRoom}/8`;
                 indicator.className = `room-indicator room${currentRoom}`;
             } else {
                 indicator.style.display = 'none';
@@ -743,6 +941,7 @@
 
         // Verificar resposta
         function checkAnswer(room) {
+            if (!room) return;
             // Incrementar tentativas para a sala atual
             roomAttempts[room]++;
             
@@ -757,7 +956,7 @@
                         feedback = '⚠️ Por favor, digite uma resposta antes de continuar!';
                         break;
                     }
-                    isCorrect = answer1 === answers[1];
+                    isCorrect = answer1 >= answers[1].min && answer1 <= answers[1].max;
                     break;
                     
                 case 2:
@@ -795,6 +994,46 @@
                     
                     isCorrect = areaCorrect && perimeterCorrect;
                     break;
+
+                case 5:
+                    const answer5 = parseFloat(document.getElementById('answer5').value);
+                    if (isNaN(answer5) || document.getElementById('answer5').value.trim() === '') {
+                        roomAttempts[room]--; // Não contar como tentativa
+                        feedback = '⚠️ Por favor, digite uma resposta antes de continuar!';
+                        break;
+                    }
+                    isCorrect = answer5 >= answers[5].min && answer5 <= answers[5].max;
+                    break;
+
+                case 6:
+                    const answer6 = parseFloat(document.getElementById('answer6').value);
+                    if (isNaN(answer6) || document.getElementById('answer6').value.trim() === '') {
+                        roomAttempts[room]--; // Não contar como tentativa
+                        feedback = '⚠️ Por favor, digite uma resposta antes de continuar!';
+                        break;
+                    }
+                    isCorrect = answer6 >= answers[6].min && answer6 <= answers[6].max;
+                    break;
+
+                case 7:
+                    const answer7 = parseFloat(document.getElementById('answer7').value);
+                    if (isNaN(answer7) || document.getElementById('answer7').value.trim() === '') {
+                        roomAttempts[room]--; // Não contar como tentativa
+                        feedback = '⚠️ Por favor, digite uma resposta antes de continuar!';
+                        break;
+                    }
+                    isCorrect = answer7 >= answers[7].min && answer7 <= answers[7].max;
+                    break;
+
+                case 8:
+                    const answer8 = parseFloat(document.getElementById('answer8').value);
+                    if (isNaN(answer8) || document.getElementById('answer8').value.trim() === '') {
+                        roomAttempts[room]--; // Não contar como tentativa
+                        feedback = '⚠️ Por favor, digite uma resposta antes de continuar!';
+                        break;
+                    }
+                    isCorrect = answer8 >= answers[8].min && answer8 <= answers[8].max;
+                    break;
             }
             
             // Gerar feedback baseado no resultado e tentativas
@@ -818,7 +1057,19 @@
                             feedback = `� Correto ${attemptText}! A área do círculo é π × r² = 153,86 m².${scoreText} O círculo se ativa!`;
                             break;
                         case 4:
-                            feedback = `�🏆 INCRÍVEL ${attemptText}! Você recuperou o Códice Geométrico!${scoreText}`;
+                            feedback = `🏆 INCRÍVEL ${attemptText}! A figura complexa foi resolvida!${scoreText}`;
+                            break;
+                        case 5:
+                            feedback = `🌺 PERFEITO ${attemptText}! A área total do jardim é 44,56 m²!${scoreText} O portão se abre!`;
+                            break;
+                        case 6:
+                            feedback = `🏛️ EXCELENTE ${attemptText}! O perímetro real é 6m!${scoreText} A gaveta se abre!`;
+                            break;
+                        case 7:
+                            feedback = `💧 INCRÍVEL ${attemptText}! A área do lago é 78,84m²!${scoreText} O cofre se abre!`;
+                            break;
+                        case 8:
+                            feedback = `🏆 MAGISTRAL ${attemptText}! Área total = 174m² (144m² do quadrado + 30m² do triângulo)${scoreText} O Códice foi revelado!`;
                             break;
                     }
                 } else {
@@ -832,6 +1083,7 @@
                             case 2: hint = ' 💡 Dica: Calcule P1=12, P2=18, P3=12. Entre P1 e P3, compare as áreas!'; break;
                             case 3: hint = ' 💡 Dica: Área = π × r² = 3,14 × 7²'; break;
                             case 4: hint = ' 💡 Dica: Área total = retângulo + círculo completo. Perímetro = lados retos + circunferência'; break;
+                            case 6: hint = ' 💡 Dica: Lembre-se de converter as medidas da planta para a realidade usando a escala!'; break;
                         }
                     } else if (attempts >= 3) {
                         hint = attempts === 3 ? ' ⚠️ Última chance para ganhar pontos!' : ' 🔓 Resposta será liberada após mais uma tentativa incorreta.';
@@ -861,48 +1113,41 @@
             feedbackElement.textContent = feedback;
             feedbackElement.className = `feedback ${isCorrect ? 'success' : 'error'}`;
             
-            // Se correto, avançar para próxima sala
+            // Se correto, avançar para próxima sala ou finalizar o jogo
             if (isCorrect) {
-                setTimeout(() => {
-                    if (room < 4) {
+                if (room === 8) {
+                    // Mostrar feedback final
+                    feedbackElement.textContent = feedback;
+                    feedbackElement.className = 'feedback success';
+                    
+                    // Parar o timer
+                    clearInterval(timerInterval);
+                    
+                    // Ir para a tela de desfecho depois de 2 segundos
+                    setTimeout(() => {
+                        showRoom('ending');
+                    }, 2000);
+                } else {
+                    // Para as outras salas
+                    setTimeout(() => {
                         currentRoom++;
                         updateProgressBar();
                         showRoom(`room${currentRoom}`);
-                        // Limpar feedback da sala anterior
-                        setTimeout(() => {
-                            feedbackElement.textContent = '';
-                            feedbackElement.className = 'feedback';
-                        }, 500);
-                    } else {
-                        // Jogo completo
-                        clearInterval(timerInterval);
-                        
-                        // Esconder indicador de sala
-                        document.getElementById('roomIndicator').style.display = 'none';
-                        
-                        const totalTime = document.getElementById('timer').textContent.replace('⏰ ', '');
-                        document.getElementById('totalTime').textContent = totalTime;
-                        
-                        // Atualizar pontuação final
-                        document.getElementById('score1').textContent = `${roomScores[1]} pts`;
-                        document.getElementById('score2').textContent = `${roomScores[2]} pts`;
-                        document.getElementById('score3').textContent = `${roomScores[3]} pts`;
-                        document.getElementById('score4').textContent = `${roomScores[4]} pts`;
-                        document.getElementById('totalScoreFinal').textContent = `${totalScore}/12 pts`;
-                        
-                        setTimeout(() => showRoom('victory'), 1000);
-                    }
-                }, 2000);
+                        feedbackElement.textContent = '';
+                        feedbackElement.className = 'feedback';
+                    }, 2000);
+                }
             }
-        }
+            }
+
 
         // Reiniciar o jogo
         function restartGame() {
             currentRoom = 0;
             selectedOption = 0;
             totalScore = 0;
-            roomAttempts = { 1: 0, 2: 0, 3: 0, 4: 0 };
-            roomScores = { 1: 0, 2: 0, 3: 0, 4: 0 };
+            roomAttempts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
+            roomScores = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
             clearInterval(timerInterval);
             
             // Limpar inputs
@@ -930,7 +1175,7 @@
         // Detectar Enter nos inputs
         document.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
-                if (currentRoom >= 1 && currentRoom <= 4) {
+                if (currentRoom >= 1 && currentRoom <= 8) {
                     checkAnswer(currentRoom);
                 }
             }

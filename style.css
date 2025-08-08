@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.room {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none;
+    margin-bottom: 20px;
+}
+
+.room-title {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.figure-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.svg-container {
+    margin: 20px auto;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.question {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+.input-group {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type="number"] {
+    padding: 8px;
+    font-size: 1.1em;
+    width: 150px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.feedback {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.feedback .correct {
+    color: #27ae60;
+}
+
+.feedback .incorrect {
+    color: #c0392b;
+}
+
+.svg-container svg {
+    max-width: 100%;
+    height: auto;
+}
