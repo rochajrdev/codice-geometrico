@@ -789,7 +789,7 @@
                     <h2>🌟 Parabéns, Guardião das Áreas e Perímetros! 🌟</h2>
                     <p>Você completou todas as missões, venceu cada obstáculo e mostrou que o raciocínio lógico é sua maior arma. O mundo agora conhece seu nome como o mestre que solucionou o Enigma das Oito Salas.</p>
                     
-                    <button class="btn" onclick="showRoom('victory')">📊 Ver Pontuação Final</button>
+                    <button class="btn" onclick="showVictoryScreen()">📊 Ver Pontuação Final</button>
                 </div>
             </div>
         </div>
@@ -817,12 +817,28 @@
                         <span id="score3">0 pts</span>
                     </div>
                     <div class="score-item">
-                        <span>� Sala 4 - O Desafio Mestre:</span>
+                        <span>🎯 Sala 4 - O Desafio Mestre:</span>
                         <span id="score4">0 pts</span>
+                    </div>
+                    <div class="score-item">
+                        <span>🌺 Sala 5 - O Jardim Secreto:</span>
+                        <span id="score5">0 pts</span>
+                    </div>
+                    <div class="score-item">
+                        <span>🏛️ Sala 6 - A Planta da Casa Antiga:</span>
+                        <span id="score6">0 pts</span>
+                    </div>
+                    <div class="score-item">
+                        <span>💧 Sala 7 - O Lago Misterioso:</span>
+                        <span id="score7">0 pts</span>
+                    </div>
+                    <div class="score-item">
+                        <span>🏆 Sala 8 - O Desafio Final:</span>
+                        <span id="score8">0 pts</span>
                     </div>
                     <div class="score-item" style="border-left-color: #f39c12; font-weight: bold; background: #fff9e6;">
                         <span>🎯 PONTUAÇÃO TOTAL:</span>
-                        <span id="totalScoreFinal">0 de 12 pontos</span>
+                        <span id="totalScoreFinal">0 de 24 pontos</span>
                     </div>
                 </div>
                 
@@ -937,6 +953,17 @@
             
             // Adicionar seleção atual
             options[option - 1].classList.add('selected');
+        }
+
+        // Função para mostrar a tela de vitória com as pontuações
+        function showVictoryScreen() {
+            showRoom('victory');
+            // Atualizar pontuações de cada sala
+            for (let i = 1; i <= 8; i++) {
+                document.getElementById(`score${i}`).textContent = `${roomScores[i]} pts`;
+            }
+            // Atualizar pontuação total
+            document.getElementById('totalScoreFinal').textContent = `${totalScore} de 24 pontos`;
         }
 
         // Verificar resposta
